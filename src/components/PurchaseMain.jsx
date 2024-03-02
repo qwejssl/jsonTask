@@ -19,9 +19,9 @@ export default function PurchaseOrderList() {
       <ul className="order-list"> 
         {jsonData.mvPurchaseOrders.map(order => ( 
           <li key={order.PurchaseOrderNo} className="order-list-item"> 
-            <button className="order-link" onClick={() => showOrderDetails(order)}> 
+            <a href='#' className="order-link" onClick={() => showOrderDetails(order)}> 
               {order.PurchaseOrderTypeAbbreviation} - {order.PurchaseOrderNo} 
-            </button> 
+            </a> 
           </li> 
         ))} 
       </ul> 
